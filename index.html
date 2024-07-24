@@ -29,6 +29,9 @@
             padding: 10px;
             border-radius: 5px;
         }
+        .language-switcher {
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -39,62 +42,120 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
+                <li class="nav-item">
+                    <a class="nav-link language-switcher" id="switch-to-english" href="#">English</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link language-switcher" id="switch-to-marathi" href="#">मराठी</a>
                 </li>
             </ul>
         </div>
     </nav>
 
     <div class="container mt-5 text-white">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h1>Arun Shankar Kulkarni</h1>
-                <h3>The Gentleman</h3>
-                <p class="lead">Retired Locomotive Pilot of Indian Railways</p>
-                <p class="lead">Dedicated to him by his loving son</p>
+        <div id="english-content">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1>Arun Shankar Kulkarni</h1>
+                    <h3>The Gentleman</h3>
+                    <p class="lead">Retired Locomotive Pilot of Indian Railways</p>
+                    <p class="lead">Dedicated to him by his loving son</p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-12">
+                    <h2>About My Father</h2>
+                    <p>
+                        My father, Arun Shankar Kulkarni, is a retired locomotive pilot from Indian Railways. Known for his wit and sarcasm, he possesses a vast knowledge spanning from cricket to politics to general knowledge. His punctuality and accuracy are unmatched, and he is a true gentleman who has always taken exceptional care of our family and everyone around him. His writing and mathematics skills are commendable, making him a legend in his own right.
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>Forecasting</li>
+                        <li>Understanding People</li>
+                        <li>Straightforwardness</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h2>Special Skills</h2>
+                    <ul>
+                        <li>Extensive Knowledge of Medicine</li>
+                        <li>Well-Stocked with Essentials</li>
+                        <li>Fitness Enthusiast, Avid Walker</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <h2>His Journey</h2>
+                    <p>
+                        From the bustling tracks of Indian Railways to the serene walks in the park, my father's journey has been one of dedication, learning, and growth. He has navigated life with the same precision and commitment that he applied to his career, ensuring every moment is lived to the fullest.
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <h2>Interests</h2>
+                    <p>
+                        My father's interests are as diverse as his knowledge. He enjoys discussing and debating topics ranging from cricket to global politics, and he finds joy in the simple pleasures of life, such as a good walk or a well-crafted piece of writing.
+                    </p>
+                </div>
             </div>
         </div>
-        <div class="row mt-5">
-            <div class="col-md-12">
-                <h2>About My Father</h2>
-                <p>
-                    My father, Arun Shankar Kulkarni, is a retired locomotive pilot from Indian Railways. Known for his wit and sarcasm, he possesses a vast knowledge spanning from cricket to politics to general knowledge. His punctuality and accuracy are unmatched, and he is a true gentleman who has always taken exceptional care of our family and everyone around him. His writing and mathematics skills are commendable, making him a legend in his own right.
-                </p>
+
+        <div id="marathi-content" style="display: none;">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1>अरुण शंकर कुलकर्णी</h1>
+                    <h3>जेंटलमॅन</h3>
+                    <p class="lead">भारतीय रेल्वेचे निवृत्त लोकोमोटिव्ह पायलट</p>
+                    <p class="lead">त्यांच्या प्रिय मुलाने त्यांना समर्पित केले</p>
+                </div>
             </div>
-        </div>
-        <div class="row mt-4">
-            <div class="col-md-6">
-                <h2>Skills</h2>
-                <ul>
-                    <li>Forecasting</li>
-                    <li>Understanding People</li>
-                    <li>Straightforwardness</li>
-                </ul>
+            <div class="row mt-5">
+                <div class="col-md-12">
+                    <h2>माझ्या वडिलांविषयी</h2>
+                    <p>
+                        माझे वडील, अरुण शंकर कुलकर्णी, भारतीय रेल्वेचे निवृत्त लोकोमोटिव्ह पायलट आहेत. त्यांच्या विनोदबुद्धी आणि व्यंगामुळे ते ओळखले जातात आणि क्रिकेटपासून राजकारणापर्यंत सर्वसामान्य ज्ञानापर्यंत विस्तृत ज्ञान आहे. त्यांची वक्तशीरता आणि अचूकता अप्रतिम आहे आणि ते खरे सज्जन आहेत ज्यांनी नेहमीच आमच्या कुटुंबाची आणि आजूबाजूच्या प्रत्येकाची उत्कृष्ट काळजी घेतली आहे. त्यांचे लेखन आणि गणित कौशल्य वाखाणण्याजोगे आहे, ज्यामुळे ते खरोखरच एक दंतकथा आहेत.
+                    </p>
+                </div>
             </div>
-            <div class="col-md-6">
-                <h2>Special Skills</h2>
-                <ul>
-                    <li>Extensive Knowledge of Medicine</li>
-                    <li>Well-Stocked with Essentials</li>
-                    <li>Fitness Enthusiast, Avid Walker</li>
-                </ul>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <h2>कौशल्ये</h2>
+                    <ul>
+                        <li>भविष्यवाणी</li>
+                        <li>लोकांना समजून घेणे</li>
+                        <li>सोपेपणा</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h2>विशेष कौशल्ये</h2>
+                    <ul>
+                        <li>औषधांचा व्यापक ज्ञान</li>
+                        <li>सर्व आवश्यक गोष्टींचे उत्तम साठा</li>
+                        <li>फिटनेस प्रेमी, चालण्याचा उत्साही</li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div class="row mt-4">
-            <div class="col-md-12">
-                <h2>His Journey</h2>
-                <p>
-                    From the bustling tracks of Indian Railways to the serene walks in the park, my father's journey has been one of dedication, learning, and growth. He has navigated life with the same precision and commitment that he applied to his career, ensuring every moment is lived to the fullest.
-                </p>
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <h2>त्यांचा प्रवास</h2>
+                    <p>
+                        भारतीय रेल्वेच्या गजबजलेल्या मार्गांपासून ते पार्कमधील शांत चालांपर्यंत, माझ्या वडिलांचा प्रवास समर्पण, शिकणे आणि वाढीचा राहिला आहे. त्यांनी आपल्या करिअरमध्ये लागू केलेल्या अचूकता आणि वचनबद्धतेसह जीवनाचा मार्ग शोधला आहे, प्रत्येक क्षण संपूर्णपणे जगण्याचे सुनिश्चित केले आहे.
+                    </p>
+                </div>
             </div>
-        </div>
-        <div class="row mt-4">
-            <div class="col-md-12">
-                <h2>Interests</h2>
-                <p>
-                    My father's interests are as diverse as his knowledge. He enjoys discussing and debating topics ranging from cricket to global politics, and he finds joy in the simple pleasures of life, such as a good walk or a well-crafted piece of writing.
-                </p>
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <h2>आवडी</h2>
+                    <p>
+                        माझ्या वडिलांची आवडी त्यांच्या ज्ञानाइतकीच वैविध्यपूर्ण आहेत. त्यांना क्रिकेटपासून ते जागतिक राजकारणापर्यंत विविध विषयांवर चर्चा करणे आणि वादविवाद करणे आवडते आणि त्यांना जीवनातील साध्या आनंदांमध्ये आनंद मिळतो, जसे की चांगली चाल किंवा उत्तम प्रकारे लिहिलेले लेखन.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -102,5 +163,16 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('switch-to-english').addEventListener('click', function() {
+            document.getElementById('english-content').style.display = 'block';
+            document.getElementById('marathi-content').style.display = 'none';
+        });
+
+        document.getElementById('switch-to-marathi').addEventListener('click', function() {
+            document.getElementById('english-content').style.display = 'none';
+            document.getElementById('marathi-content').style.display = 'block';
+        });
+    </script>
 </body>
 </html>
